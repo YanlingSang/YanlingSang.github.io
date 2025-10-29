@@ -1,0 +1,14 @@
+# Local development config - extends _config.yml
+# Use with: bundle exec jekyll serve --config _config.yml,_config_local.yml
+
+# Disable plugins that require nokogiri (which has architecture issues)
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  # jemoji disabled for local dev to avoid nokogiri issues
+
+# Keep site building fast
+incremental: true
+

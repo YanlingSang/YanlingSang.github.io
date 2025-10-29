@@ -1,0 +1,290 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{microtype}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Yanling Sang} \\ \vspace{1pt}
+    405 Hilgard Avenue, University of California, Los Angeles, CA 90095, United States\\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 1-310 570 8831 ~ \href{mailto:sylvia1016@ucla.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{sylvia1016@ucla.edu}} ~ 
+  %\href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/username}}  ~
+    %\href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/username}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education Background}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+    {University of California, Los Angeles, Samueli School of Engineering}{Los Angeles, USA}
+    {Master of Science in Civil Engineering \textbf{Transportation Engineering} (In-progress)}{\textit{09/2024-Present}}
+    \resumeItemListStart
+        \resumeItem{Overall GPA: \textbf{3.9}/4.0}
+        \resumeItem{Key Coursework: Traffic Engineering Systems: Operations and Control, GIS and Spatial Data Science, Large-Scale Data Mining: Models and Algorithms, Intelligent Transportation Systems}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Beijing Jiaotong University (in collaboration with Delft University of Technology) }{Beijing, China}
+      {Bachelor of Engineering in \textbf{Traffic and Transportation}}{\textit{09/2020-06/2024}}
+      \resumeItemListStart
+          \resumeItem{Overall GPA: \textbf{3.7}/4.0.}
+          \resumeItem{Key Coursework: Operations Research (100), Physics(96), Transportation Economics (94), Transportation Facilities (91), Planning and Operating Public Transport System (90), Logistics and Supply Chain Management (90)}
+          %\resumeItem{Selected Awards: Third-class Scholarship for Excellent Academic Performance at BJTU in academic year 2020-2021; Summer Social Practice Excellent Team at BJTU in 2022; Third Prize in Social Practice Activity at BJTU in 2022; Second Prize of the first “Jiaoyun · Cafe” Cultural Space Operation Scheme Competition of the School of Traffic and Transportation at BJTU in 2023 }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \vspace{-15pt}
+
+%-----------Publications and Patents-----------
+\section{Publications and Patents}
+- \textbf{Y. Sang}, Y. Tang, A. Qu, and J. Zhao. "RoutineHub: A Framework for Persona-Conditioned Activity Chain Generation via Structured Templates and RAG-Augmented LLM Refinement." \textit{Manuscript prepared for submission to 
+Travel Behaviour and Society}.\\
+- Y. Zhang*, \textbf{Y. Sang*}, and M. Wu. "Congestion Pricing in New York City: Effects on Ride-Hailing, Transit, and Welfare." \textit{Manuscript submitted to Transportation Research Part A: Policy and Practice}.\\
+- \textbf{Y. Sang}. "Research on Demand Responsive Transit Route Optimization, Scheduling Models, and Solution Algorithms." \textit{Highlights in Science, Engineering and Technology}. Presented at the 2nd International Conference on Civil Engineering, Architecture and Transportation (CEAT 2024).\\
+- B. Wang, Y. Gao, A. Huang, and \textbf{Y. Sang}. "Game Models for Taxi Decision-Making Considering Online Ride-Hailing Competition in Airport." \textit{2023 IEEE 8th International Conference on Intelligent Transportation Engineering (ICITE)}, (2023): 248–254. IEEE.\\
+- B. Han, Y. Yu, Z. Xi, Y. Sun, F. Lu, S. Li, Z. Li, S. Huang, J. Hu, \textbf{Y. Sang}, and Y. Zhao. "Overview of Global Urban Rail Transit Operation Statistics and Analysis in 2023." \textit{Urban Rail Transit}, 2024, \textit{37}(1): 1–9.\\
+- “Integrated Optimization of Train Diagram and Rolling Stock Circulation with Full-length and Short-length Routes of Virtual Coupling Trains in Urban Rail Transit." \textit{Patent Application}, (Application Number: 202311592436.X), 2023.\\
+\vspace{-10pt}
+
+
+%-----------Research Experience-----------
+\section{Research Experience}
+
+\renewcommand{\baselinestretch}{1.1}\normalsize
+
+\resumeSubHeadingListStart
+
+
+
+\resumeSubheading
+{\makebox[0.6\textwidth][l]{\textbf{\textls[-0]{RoutineHub: A Framework for Persona-Conditioned Activity Chain Generation}}}}{Cambridge, USA}
+{\textit{Advisor: \textbf{Professor Jinhua Zhao}, Massachusetts Institute of Technology (MIT)} }{\textit{7/2025 -- Present}}
+\resumeItemListStart
+\resumeItem{Designed RoutineHub, an end-to-end activity chain generation framework combining symbolic reasoning and deep learning to predict personalized daily routines from Singapore HITS2012 dataset (21,936 users, 85,882 trips).}
+ \resumeItem{Engineered a dual-architecture system: (1) Transformer-based sequence-to-sequence model with joint activity-time prediction and temporal consistency constraints; (2) LLM-augmented retrieval system with template-guided generation and uncertainty modeling.}
+
+\resumeItem{Implemented rare pattern mining with Bernoulli modeling and boosting mechanisms to capture low-frequency behavioral patterns, expanding activity taxonomy from 15 to 27 types through LLM-based subdivision.}
+
+\resumeItem{Achieved fine-grained temporal modeling with 15-minute precision slots and persona-based conditioning, incorporating demographic features, workday patterns, and activity dependencies for realistic schedule generation.}
+    \resumeItem{\textbf{Outcome:} Preparing a manuscript for submission to the \textit{Travel Behaviour and Society}.}   
+\resumeItemListEnd
+\vspace{-5pt}
+
+\resumeSubheading
+{\makebox[0.6\textwidth][l]{\textbf{\textls[-0]{Impact of Congestion Pricing on Ride-hailing and Subway in New York City}}}}{Berkeley, USA}
+{\textit{Advisor: Assistant \textbf{Professor Manxi Wu}, UC Berkeley}}{\textit{05/2025 -- Present}}
+\resumeItemListStart
+    \resumeItem{Analyzed the short-run effects of NYC's \$1.50 congestion surcharge (introduced January 5, 2025) on for-hire vehicles and subway ridership using 11.0M TLC trip records and 57.2M MTA ridership estimates}.
+    \resumeItem{Applied two-way fixed effects difference-in-differences design with OD-pair and temporal fixed effects.}
+    \resumeItem{Identified divergent platform responses with Uber trips declining 6\% while Lyft increased 2--5\%; subway ridership rose 1\% indicating partial modal substitution from ride-hailing to public transit.}
+    \resumeItem{Revealed heterogeneous impacts: short trips and low-fare rides declined significantly (9\% and 35\% respectively) while base fares increased though driver pay gains remained limited.}
+    \resumeItem{\textbf{Outcome:} Manuscript submitted to \textit{Transportation Research Part A} titled "Congestion Pricing in New York City: Effects on Ride-Hailing, Transit, and Welfare".}
+\resumeItemListEnd
+\vspace{-5pt}
+
+
+\resumeSubheading
+{\makebox[0.6\textwidth][l]{\textbf{\textls[-0]{Tourist Mobility Modeling for Tokyo via Survey Data}}}}{Los Angeles, USA}
+{\textit{Advisor: \textbf{Professor Jiaqi Ma}, UCLA, under UCLA Mobility Lab}}{\textit{12/2024 -- 05/2025}}
+\resumeItemListStart
+    \resumeItem{Fused GPS pins with Tokyo Visitor Survey records to create a zonal mobility dataset.}
+    \resumeItem{Developed an Random Forest model to predict nights stayed and locations visited from demographic features.}
+    \resumeItem{Generated trajectories that matching survey chain length and activity type distribution using \textbf{LLM}.}
+    \resumeItem{\textbf{Outcome:} Built a full pipeline for generating synthetic tourist activity chain at high spatiotemporal resolution.}
+\resumeItemListEnd
+\vspace{-5pt}
+
+\resumeSubheading
+{QuantV2X: Communication–Compute Co-Design for Cooperative Perception}{Los Angeles, USA}
+{\textit{Advisor: \textbf{Professor Jiaqi Ma}, UCLA}}{\textit{08/2025 -- Present}}
+\resumeItemListStart
+    \resumeItem{Built a C-V2X testbed and benchmarked message representations (PointCloud, BEV, Boxes, PointCluster) to quantify bandwidth–accuracy–latency trade-offs.}
+    \resumeItem{Designed a dual-quantization stack (INT8 models + feature codebooks) with calibration and vector quantization, achieving order-of-magnitude feature compression while preserving accuracy, and enabling low-latency TensorRT edge deployment.}
+    \resumeItem{Established end-to-end benchmarks and a reproducible pipeline that unify model–communication co-design and multi-agent cooperation, covering bandwidth/latency limits, packet loss, and cross-agent sync for fair, repeatable evaluation.}
+    \resumeItem{Provides a reusable baseline and evaluation suite for future quantization choices under compute and bandwidth budgets.}
+    \resumeItem{\textbf{Outcome:} \textit{Prepared as my M.S. thesis and planned as a contributing component to a team-authored NeurIPS submission}.}
+\resumeItemListEnd
+
+\resumeSubheading
+{\makebox[0.6\textwidth][l]{\textbf{\textls[-0]{Game Models for Taxi Decision-Making Considering Online Ride-Hailing Competition}}}}{Beijing, China}
+{\textit{Advisor: \textbf{Professor Ailing Huang}, BJTU}}{\textit{02/2022 -- 01/2024}}
+\resumeItemListStart
+    \resumeItem{Constructed non-cooperative and cooperative game models of the two groups with taxi drivers and online car-hailing.}
+    \resumeItem{Established the income function to explore the conditions for the two games to reach Nash equilibrium.}
+    \resumeItem{Conducted empirical analysis utilizing actual survey data from Beijing Capital International Airport.}
+    \resumeItem{\textbf{Outcome:} Published a paper in \textit{IEEE International Conference on Intelligent Transportation Engineering (ICITE)}.}
+\resumeItemListEnd
+\vspace{-5pt}
+
+\resumeSubheading
+{\makebox[0.2\textwidth][l]{\textbf{\textls[-40]{Trajectory-Based Optimization of Night Customized Bus Route for Urban Transport Hubs}}}}{Beijing, China}
+{\textit{Advisor: \textbf{Professor Ailing Huang}, BJTU \& Assistant \textbf{Professor Yimeng Zhang}, SWJTU}}{\textit{02/2024 -- 05/2024}}
+\resumeItemListStart
+    \resumeItem{Extracted features from taxi/ride-hailing trajectory data and passenger travel characteristics.}
+    \resumeItem{Constructed a mixed-integer programming model for customized bus route and vehicle scheduling.}
+    \resumeItem{Designed a genetic algorithm for solving the proposed model.}
+    \resumeItem{\textbf{Outcome:} Won the \textit{Outstanding Thesis Award at Beijing Jiaotong University}}
+\resumeItemListEnd
+\vspace{-5pt}
+
+\resumeSubheading
+{\makebox[0.6\textwidth][l]{\textbf{\textls[-60]{MBSE-Driven Design and Simulation of a CAV Cyber-Physical System Architecture}}}}{Beijing, China}
+{\textit{Advisor: \textbf{Professor Xiaoping Ma}, BJTU}}{\textit{09/2022 -- 10/2022}}
+\resumeItemListStart
+    \resumeItem{Proposed reference architecture for cyber-physical systems (CPS) for connected and autonomous vehicles (CAVs) based on digital twin technology.}
+    \resumeItem{Validated and optimized single-intersection signal timing via simulations in VISSIM and Synchro.}
+    \resumeItem{\textbf{Outcome:} Won third prize at \textit{Transportation Science and Technology Competition at Beijing Jiaotong University}.}
+\resumeItemListEnd
+\vspace{-8pt}
+
+\resumeSubHeadingListEnd
+
+
+%-----------Internship Experience-----------
+\section{Internship Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {Qingdao Kaiyuan Kerun Electronics Co., LTD}{Qingdao, China}
+    {\textit{Traffic Engineering Intern}}{\textit{07/2023}}
+\resumeItemListStart
+    \resumeItem{Redesigned a deformed (Y-shaped) intersection in Jiaozhou, Qingdao, proposing three improvement schemes.}
+    \resumeItem{Applied Synchro and VISSIM, achieving up to 28\% reduction in average stop delay and improving left-turn flow and safety.}
+\resumeItemListEnd
+\vspace{-15pt}
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------LEADERSHIP AND ACTIVITIES-----------
+\section{Competitions and Activities}
+\noindent \textbf{Urban Futures: Online Research Seminar}, University of Cambridge, paper accepted by CEAT 2024 \hfill \textit{10/2023}\\
+\noindent \textbf{MATHORCUP Mathematical Modeling Competition}, Won third prize at Beijing Jiaotong University \hfill \textit{04/2023}
+\vspace{-20pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+\noindent \textbf{Computer Skills}: Python, MATLAB, SPSS, Gurobi, VISSIM, CAD, MATSim and AutoCDA\\
+\noindent \textbf{Standardized Tests}: IELTS total score: 7.0; GRE: Verbal: 160 Quantitative: 168 Analytical Writing: 4.0
+\vspace{-10pt}
+
+\end{document}
